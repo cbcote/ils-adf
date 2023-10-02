@@ -1,0 +1,9 @@
+{
+	"name": "ils-adf-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7b754721-2e5f-46d3-a05e-5e2a2959bd3f",
+		"tenantId": "2ec1918c-684c-4216-b14c-e144ab33beb4"
+	}
+}
