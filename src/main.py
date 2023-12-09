@@ -8,15 +8,15 @@ from pdf_extraction import PDFExtractor
 def main(pdf_path):
     pdf_extractor = PDFExtractor(pdf_path)
     pdf_extractor.read_pdf()
-    raw_text = pdf_extractor.extract_all_text()
+    raw_text = pdf_extractor.read_pdf()
 
-    # data_cleaner = DataCleaner(raw_text)
-    # cleaned_text = data_cleaner.clean_text()
+    data_cleaner = DataCleaner(raw_text)
+    cleaned_text = data_cleaner.clean_text()
 
-    # data_preparer = DataPreparer(cleaned_text)
-    # extracted_data = data_preparer.extract_data_points()
+    data_preparer = DataPreparer(cleaned_text)
+    extracted_data = data_preparer.extract_data_points()
 
-    return raw_text
+    return extracted_data
 
 if __name__ == "__main__":
     data_dir = 'data'
