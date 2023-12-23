@@ -5,7 +5,13 @@ class PDFExtractor:
         self.pdf_path = pdf_path
         self.text = ""
 
-    def read_pdf(self):
+    def read_pdf(self) -> str:
+        """
+        Reads the PDF and extracts the text.
+        
+        Returns:
+            str: The extracted text.
+        """
         with open(self.pdf_path, 'rb') as file:
             reader = PdfReader(file)
             for page in reader.pages:
