@@ -5,7 +5,16 @@ from data_cleaning import DataCleaner
 from pdf_extraction import PDFExtractor
 
 
-def main(pdf_path):
+def main(pdf_path: str) -> dict:
+    """
+    Extracts the data points from the PDF.
+    
+    Args:
+        pdf_path (str): The path to the PDF.
+    
+    Returns:
+        dict: The extracted data points.
+    """
     pdf_extractor = PDFExtractor(pdf_path)
     pdf_extractor.read_pdf()
     raw_text = pdf_extractor.read_pdf()
