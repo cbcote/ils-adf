@@ -1,7 +1,7 @@
 import re
 
 class DataPreparer:
-    def __init__(self, cleaned_text):
+    def __init__(self, cleaned_text: str) -> None:
         self.cleaned_text = cleaned_text
 
     def find_issuer(self) -> str:
